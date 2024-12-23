@@ -325,7 +325,7 @@
 
 .previews-section.home {
     & .inner {
-        height: 900px;
+        height: 1100px;
 
         &::before {
             z-index: 3;
@@ -341,7 +341,7 @@
 
 .previews-section.about-us {
     & .inner {
-        height: 940px;
+        height: 1100px;
 
         &::before {
             z-index: 3;
