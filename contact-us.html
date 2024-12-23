@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future System Web Redeign</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./layout/css/style.css" />
+    <link rel="stylesheet" href="./layout/css/helpers.css" />
+  </head>
+  <body>
+    <main class="contact-us-page">
+      <header class="header" id="header"></header>
+
+      <!-- previews-section -->
+      <section class="section previews-section contact-us">
+        <div class="inner"></div>
+      </section>
+
+      <section class="section contact-us-section">
+        <div class="head">
+          <h2>تواصل معنا</h2>
+          <p>ابق على تواصلٍ معنا</p>
+        </div>
+
+        <form>
+          <div class="group">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="الاسم الاول"
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="الاسم الاخير"
+            />
+          </div>
+          <div class="group">
+            <img src="./layout/images/flag.png" alt="" />
+            <select name="phoneKey" id="phoneKey">
+              <option value="" data-value="-1"></option>
+              <option value="+20" data-value="+20">+20</option>
+              <option value="+20" data-value="+20">+20</option>
+              <option value="+20" data-value="+20">+20</option>
+            </select>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="رقم الجوال"
+            />
+          </div>
+          <div class="group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="البريد الالكتروني"
+            />
+          </div>
+          <div class="group">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="رسالتك"
+            ></textarea>
+          </div>
+
+          <div class="action">
+            <button type="submit" class="link">
+              <span>ارسال</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- services-section -->
+      <section class="section services-section">
+        <div class="head">
+          <h2>خدماتنا</h2>
+          <a href="#">المزيد</a>
+        </div>
+
+        <div class="slider">
+          <div class="slider-slides" id="services"></div>
+
+          <div class="slider-control"></div>
+        </div>
+      </section>
+
+      <footer class="footer" id="footer"></footer>
+    </main>
+  </body>
+
+  <script src="./layout/js/main.js"></script>
+</html>
