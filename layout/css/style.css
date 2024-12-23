@@ -294,7 +294,8 @@
 }
 
 .about-us-page,
-.contact-us-page {
+.contact-us-page,
+.common-questions-page {
     & .footer {
         padding-top: 70px;
         margin-top: 70px;
@@ -303,7 +304,8 @@
 
 .previews-section.home,
 .previews-section.about-us,
-.previews-section.contact-us {
+.previews-section.contact-us,
+.previews-section.common-questions {
     & .inner {
 
         &::before,
@@ -359,6 +361,22 @@
         &::after {
             z-index: 2;
             background-image: url('../images/backgrounds/contact-us-bg.png');
+        }
+    }
+}
+
+.previews-section.common-questions {
+    & .inner {
+        height: 550px;
+
+        &::before {
+            z-index: 3;
+            background-image: url('../images/backgrounds/common-questions-bg.png');
+        }
+
+        &::after {
+            z-index: 2;
+            background-image: url('../images/backgrounds/about-us-bg2.png');
         }
     }
 }
@@ -928,7 +946,8 @@
 
 /* About-us page */
 .about-us-page,
-.contact-us-page {
+.contact-us-page,
+.common-questions-page {
     background-color: var(--main-color-light);
 
     & .services-section,
@@ -1082,6 +1101,29 @@
                         border-right: 1px solid var(--light-color);
                     }
                 }
+            }
+        }
+    }
+}
+
+/* Common-questions-page */
+.common-questions-page {
+    & .questions-section {
+        gap: 64px;
+        display: flex;
+        padding: 64px;
+        flex-direction: column;
+
+        & .head {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & h2 {
+                font-size: 44px;
+                font-weight: 700;
+                color: var(--red-color);
             }
         }
     }

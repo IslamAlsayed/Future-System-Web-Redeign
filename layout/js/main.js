@@ -1,6 +1,6 @@
 let componentHeader = document.getElementById("header");
 if (header) {
-    fetch("/includes/templates/header.html")
+    fetch("./includes/templates/header.html")
         .then(response => response.text())
         .then(result => {
             componentHeader.innerHTML = result;
@@ -56,7 +56,7 @@ if (header) {
 
 let componentFooter = document.getElementById("footer");
 if (footer) {
-    fetch("/includes/templates/footer.html").then(response => response.text())
+    fetch("./includes/templates/footer.html").then(response => response.text())
         .then(result => {
             componentFooter.innerHTML = result;
         }).catch(err => console.log(err));
