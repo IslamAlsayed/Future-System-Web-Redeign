@@ -6,11 +6,18 @@
     <title>Future System Web Redeign</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./layout/css/all.min.css" />
     <link rel="stylesheet" href="./layout/css/style.css" />
     <link rel="stylesheet" href="./layout/css/helpers.css" />
+    <link rel="stylesheet" href="./layout/css/responsive.css" />
   </head>
+
   <body>
     <main class="about-us-page">
       <header class="header" id="header"></header>
@@ -47,22 +54,137 @@
       </section>
 
       <!-- services-section -->
-      <section class="section services-section">
+      <section class="section services-section slider-section">
         <div class="head">
           <h2>خدماتنا</h2>
           <a href="#">المزيد</a>
         </div>
 
-        <div class="slider">
-          <div class="slider-slides" id="services"></div>
+        <div class="card-wrapper services-card-wrapper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service1.png"
+                    alt="service1"
+                  />
+                </div>
 
-          <div class="slider-control"></div>
+                <div class="text">
+                  <h2>تصميم واجهة المستخدم وتجربة المستخدم</h2>
+                  <p>
+                    حتى الإشارة القوية ليس لها أي سيطرة على النصوص العمياء، فهي
+                    حياة غير إملائية تقريبًا في يوم من الأيام ولكن هناك سطر صغير
+                    من النص الأعمى.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service2.png"
+                    alt="service2"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>تصميم الهوية البصرية</h2>
+                  <p>
+                    صمم هويتك البصرية بشكل مميز، حيث لا بد لهويتك وشعارك من أخذ
+                    مكانة مميزة بين المنافسين
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service3.png"
+                    alt="service3"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>تطوير شبكة الويب</h2>
+                  <p>
+                    حتى الإشارة القوية ليس لها أي سيطرة على النصوص العمياء، فهي
+                    حياة غير إملائية تقريبًا في يوم من الأيام ولكن هناك سطر صغير
+                    من النص الأعمى.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service4.png"
+                    alt="service4"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>التسويق الرقمي</h2>
+                  <p>
+                    حتى الإشارة القوية ليس لها أي سيطرة على النصوص العمياء، فهي
+                    حياة غير إملائية تقريبًا في يوم من الأيام ولكن هناك سطر صغير
+                    من النص الأعمى.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination services-pagination"></div>
+          <div
+            class="swiper-slide-button swiper-button-prev services-prev"
+          ></div>
+          <div
+            class="swiper-slide-button swiper-button-next services-next"
+          ></div>
         </div>
       </section>
 
       <footer class="footer" id="footer"></footer>
     </main>
-  </body>
 
-  <script src="./layout/js/main.js"></script>
+    <script src="./layout/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./layout/js/slider.js"></script>
+  </body>
 </html>

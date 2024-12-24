@@ -1,57 +1,64 @@
-<div class="container">
-  <div class="inner">
-    <div class="logo">
-      <img src="./layout/images/general/Vector.png" alt="site logo" />
-    </div>
+<div class="inner">
+  <div class="logo">
+    <img src="./layout/images/general/vector2.png" alt="site logo" />
+  </div>
 
-    <ul class="links" id="links">
-      <li><a href="./" class="route link active">الرئيسية</a></li>
+  <ul class="links" id="routes">
+    <li><a href="./" class="route link active">الرئيسية</a></li>
 
-      <li><a href="./about-us.html" class="route link">من نحن</a></li>
+    <li>
+      <a href="./about-us.html" data-page="about-us.html" class="route link"
+        >من نحن</a
+      >
+    </li>
 
-      <li class="parentLink">
-        <span class="link">الصفحات <i class="fas fa-angle-down"></i></span>
+    <li class="parentLink">
+      <span class="link">الصفحات <i class="fas fa-angle-down"></i></span>
 
-        <ul class="nestedList">
-          <li><a href="#" class="link">الصفحة 1</a></li>
-          <li><a href="#" class="link">الصفحة 2</a></li>
-          <li><a href="#" class="link">الصفحة 3</a></li>
-        </ul>
-      </li>
+      <ul class="nestedList">
+        <li><a href="#" class="link">الصفحة 1</a></li>
+        <li><a href="#" class="link">الصفحة 2</a></li>
+        <li><a href="#" class="link">الصفحة 3</a></li>
+      </ul>
+    </li>
 
-      <li class="parentLink">
-        <span class="link">خدماتنا <i class="fas fa-angle-down"></i></span>
+    <li class="parentLink">
+      <span class="link">خدماتنا <i class="fas fa-angle-down"></i></span>
 
-        <ul class="nestedList">
-          <li><a href="#" class="route link">خدمة 1</a></li>
+      <ul class="nestedList">
+        <li><a href="#" class="route link">خدمة 1</a></li>
 
-          <li class="nestedParentLink">
-            <span class="link">خدمة 1 <i class="fas fa-angle-down"></i></span>
+        <li class="nestedParentLink">
+          <span class="link">خدمة 1 <i class="fas fa-angle-down"></i></span>
 
-            <ul class="nestedList">
-              <li><a href="#" class="link">خدمة 1</a></li>
-              <li><a href="#" class="link">خدمة 2</a></li>
-              <li><a href="#" class="link">خدمة 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="route link">خدمة 3</a></li>
-        </ul>
-      </li>
+          <ul class="nestedList">
+            <li><a href="#" class="link">خدمة 1</a></li>
+            <li><a href="#" class="link">خدمة 2</a></li>
+            <li><a href="#" class="link">خدمة 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="route link">خدمة 3</a></li>
+      </ul>
+    </li>
 
-      <li><a href="#" class="route link">تواصل معنا</a></li>
+    <li>
+      <a href="./contact-us.html" data-page="contact-us.html" class="route link"
+        >تواصل معنا</a
+      >
+    </li>
 
-      <li>
-        <a href="./common-questions.html" class="route link">الأسئلة الشائعة</a>
-      </li>
-    </ul>
+    <li>
+      <a
+        href="./common-questions.html"
+        data-page="common-questions.html"
+        class="route link"
+        >الأسئلة الشائعة</a
+      >
+    </li>
+  </ul>
 
-    <div class="userActions">
-      <a href="#" class="link">
-        تسجيل الدخول
-        <!-- <i class="fas fa-arrow-left-long"></i> -->
-      </a>
-      <!-- <a href="/signup">التسجيل</a>
-    <a href="/logout">تسجيل الخروج</a> -->
-    </div>
+  <div class="userActions">
+    <i class="fas fa-bars menu" id="menu"></i>
+    <a href="#" class="link">تسجيل الدخول</a>
   </div>
 </div>

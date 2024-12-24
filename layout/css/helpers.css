@@ -6,7 +6,8 @@
 :root {
     --light-color: #fff;
     --light-300-color: #BDBDBD;
-    --dark-color: #000;
+    --dark-color: #000000;
+    --dark-color-300: #7c7c7c;
     --main-color: #1a72b9;
     --main-color-light: #8cc4ed;
     --main-color-light-300: #e3eefb;
@@ -42,6 +43,10 @@ html {
     background: var(--mian-color);
     box-shadow: 2px 0px 7px var(--primary-color) inset;
 } */
+
+body {
+    /* padding-bottom: 500px; */
+}
 
 a {
     text-decoration: none;

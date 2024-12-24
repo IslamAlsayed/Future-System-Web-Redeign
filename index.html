@@ -6,11 +6,18 @@
     <title>Future System Web Redeign</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./layout/css/all.min.css" />
     <link rel="stylesheet" href="./layout/css/style.css" />
     <link rel="stylesheet" href="./layout/css/helpers.css" />
+    <link rel="stylesheet" href="./layout/css/responsive.css" />
   </head>
+
   <body>
     <main class="home-page">
       <header class="header" id="header"></header>
@@ -36,10 +43,46 @@
           </div>
 
           <div class="preview">
-            <div class="slider">
-              <div class="slider-slides" id="previews"></div>
+            <div class="card-wrapper preview-card-wrapper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="slide">
+                    <div class="image">
+                      <img
+                        src="./layout/images/previews/preview1.png"
+                        alt="preview1"
+                      />
+                    </div>
+                  </div>
+                  <div class="shadow"></div>
+                </li>
 
-              <div class="slider-control"></div>
+                <li class="swiper-slide">
+                  <div class="slide">
+                    <div class="image">
+                      <img
+                        src="./layout/images/previews/preview2.png"
+                        alt="preview2"
+                      />
+                    </div>
+                  </div>
+                  <div class="shadow"></div>
+                </li>
+
+                <li class="swiper-slide">
+                  <div class="slide">
+                    <div class="image">
+                      <img
+                        src="./layout/images/previews/preview3.png"
+                        alt="preview3"
+                      />
+                    </div>
+                  </div>
+                  <div class="shadow"></div>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination preview-pagination"></div>
             </div>
           </div>
         </div>
@@ -85,21 +128,134 @@
       </section>
 
       <!-- services-section -->
-      <section class="section services-section">
+      <section class="section services-section slider-section">
         <div class="head">
           <h2>خدماتنا</h2>
           <a href="#">المزيد</a>
         </div>
 
-        <div class="slider">
-          <div class="slider-slides" id="services"></div>
+        <div class="card-wrapper services-card-wrapper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service1.png"
+                    alt="service1"
+                  />
+                </div>
 
-          <div class="slider-control"></div>
+                <div class="text">
+                  <h2>تصميم واجهة المستخدم وتجربة المستخدم</h2>
+                  <p>
+                    حتى الإشارة القوية ليس لها أي سيطرة على النصوص العمياء، فهي
+                    حياة غير إملائية تقريبًا في يوم من الأيام ولكن هناك سطر صغير
+                    من النص الأعمى.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service2.png"
+                    alt="service2"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>تصميم الهوية البصرية</h2>
+                  <p>
+                    صمم هويتك البصرية بشكل مميز، حيث لا بد لهويتك وشعارك من أخذ
+                    مكانة مميزة بين المنافسين
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service3.png"
+                    alt="service3"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>تطوير شبكة الويب</h2>
+                  <p>
+                    حتى الإشارة القوية ليس لها أي سيطرة على النصوص العمياء، فهي
+                    حياة غير إملائية تقريبًا في يوم من الأيام ولكن هناك سطر صغير
+                    من النص الأعمى.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/services/service4.png"
+                    alt="service4"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>التسويق الرقمي</h2>
+                  <p>
+                    حتى الإشارة القوية ليس لها أي سيطرة على النصوص العمياء، فهي
+                    حياة غير إملائية تقريبًا في يوم من الأيام ولكن هناك سطر صغير
+                    من النص الأعمى.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination services-pagination"></div>
+          <div
+            class="swiper-slide-button swiper-button-prev services-prev"
+          ></div>
+          <div
+            class="swiper-slide-button swiper-button-next services-next"
+          ></div>
         </div>
       </section>
 
       <!-- features-section -->
-      <section class="section features-section">
+      <section class="section features-section slider-section">
         <div class="head">
           <h2>ما يميزنا</h2>
           <a href="#">المزيد</a>
@@ -109,52 +265,494 @@
           نحن نستخدم أحدث الحلول والتقنيات لضمان تنفيذ مشاريع وبرامج رائدة
         </div>
 
-        <div class="slider">
-          <div class="slider-slides" id="features"></div>
+        <div class="card-wrapper features-card-wrapper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/features/feature1.png"
+                    alt="service1"
+                  />
+                </div>
 
-          <div class="slider-control"></div>
+                <div class="text">
+                  <h2>فريق عمل خبير</h2>
+                  <p>
+                    نمتلك فريقا من الخبراء المتميزين الذين لديهم سجل حافل من
+                    الإنجازات المستمرة.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/features/feature2.png"
+                    alt="service2"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>تكنولوجيا متقدمة</h2>
+                  <p>
+                    نستخدم أحدث الحلول والتقنيات لضمان تنفيذ مشاريع وبرامج رائدة
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/features/feature3.png"
+                    alt="service3"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>مصداقية وشفافية</h2>
+                  <p>نؤمن بضرورة الوضوح والشفافية المطلقة في جميع تعاملاتنا.</p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/features/feature4.png"
+                    alt="service4"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>الالتزام بالمواعيد</h2>
+                  <p>
+                    نحن ملتزمون تماما بتسليم الأعمال في الوقت المحدد وبأعلى
+                    جودة.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/features/feature5.png"
+                    alt="service4"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>حفظ السرية</h2>
+                  <p>نضمن أقصى درجات السرية والخصوصية لجميع معلومات عملائنا.</p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/features/feature6.png"
+                    alt="service4"
+                  />
+                </div>
+
+                <div class="text">
+                  <h2>الاستجابة السريعة</h2>
+                  <p>
+                    نحن ملتزمون تماما بتسليم الأعمال في الوقت المحدد وبأعلى
+                    جودة.
+                  </p>
+                </div>
+
+                <div class="action">
+                  <a href="#" class="link">
+                    <span>المزيد</span>
+                    <i class="fas fa-arrow-left-long"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination features-pagination"></div>
+          <div
+            class="swiper-slide-button swiper-button-prev features-prev"
+          ></div>
+          <div
+            class="swiper-slide-button swiper-button-next features-next"
+          ></div>
         </div>
       </section>
 
       <!-- projects-section -->
-      <section class="section projects-section">
+      <section class="section projects-section slider-section">
         <div class="head">
-          <h2>مشاريعنا المميزة</h2>
+          <h2>ما يميزنا</h2>
           <a href="#">المزيد</a>
         </div>
 
-        <div class="slider">
-          <div class="slider-slides" id="projects"></div>
+        <div class="message-section">
+          نحن نستخدم أحدث الحلول والتقنيات لضمان تنفيذ مشاريع وبرامج رائدة
+        </div>
+
+        <div class="card-wrapper projects-card-wrapper circle-slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/projects/project1.png"
+                    alt="project1"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/projects/project2.png"
+                    alt="project2"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/projects/project3.png"
+                    alt="project3"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/projects/project4.png"
+                    alt="project4"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/projects/project5.png"
+                    alt="project5"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination projects-pagination"></div>
+          <div
+            class="swiper-slide-button swiper-button-prev projects-prev"
+          ></div>
+          <div
+            class="swiper-slide-button swiper-button-next projects-next"
+          ></div>
         </div>
       </section>
 
       <!-- clients-section -->
-      <section class="section clients-section">
+      <section class="section clients-section slider-section">
         <div class="head">
           <h2>عملائنا</h2>
           <a href="#">المزيد</a>
         </div>
 
-        <div class="slider">
-          <div class="slider-slides" id="clients"></div>
+        <div class="card-wrapper clients-card-wrapper circle-slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client1.png"
+                    alt="client1"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client2.png"
+                    alt="client2"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client3.png"
+                    alt="client3"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client4.png"
+                    alt="client4"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client5.png"
+                    alt="client5"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client6.png"
+                    alt="client6"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client7.png"
+                    alt="client7"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client8.png"
+                    alt="client8"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client9.png"
+                    alt="client9"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    src="./layout/images/clients/client10.png"
+                    alt="client10"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination clients-pagination"></div>
+          <div
+            class="swiper-slide-button swiper-button-prev clients-prev"
+          ></div>
+          <div
+            class="swiper-slide-button swiper-button-next clients-next"
+          ></div>
         </div>
       </section>
 
-      <!-- clients-reviews-section -->
-      <section class="section clients-reviews-section">
+      <!-- client-reviews-section -->
+      <section class="section client-reviews-section slider-section">
         <div class="head">
           <h2>ارآء العملاء</h2>
           <a href="#">المزيد</a>
         </div>
 
-        <div class="slider">
-          <div class="slider-slides" id="clients-reviews"></div>
+        <div class="card-wrapper client-reviews-card-wrapper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="text">
+                  <h2>أحمد عبد الجليل</h2>
+                  <p>
+                    رائع بشكل لا يصدق! أوصي بشدة أصدقائي بالتعامل معك، حيث أن
+                    خدماتك عالية الجودة وتقدم بشكل لا يصدق
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="text">
+                  <h2>سمير أحمد</h2>
+                  <p>
+                    رائع بشكل لا يصدق! أوصي بشدة أصدقائي بالتعامل معك، حيث أن
+                    خدماتك عالية الجودة وتقدم بشكل لا يصدق
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="text">
+                  <h2>جمال أحمد</h2>
+                  <p>
+                    رائع بشكل لا يصدق! أوصي بشدة أصدقائي بالتعامل معك، حيث أن
+                    خدماتك عالية الجودة وتقدم بشكل لا يصدق
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="text">
+                  <h2>عبد الحميد السيد</h2>
+                  <p>
+                    رائع بشكل لا يصدق! أوصي بشدة أصدقائي بالتعامل معك، حيث أن
+                    خدماتك عالية الجودة وتقدم بشكل لا يصدق
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="slide">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <div class="text">
+                  <h2>عصام صقر</h2>
+                  <p>
+                    رائع بشكل لا يصدق! أوصي بشدة أصدقائي بالتعامل معك، حيث أن
+                    خدماتك عالية الجودة وتقدم بشكل لا يصدق
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div
+            class="swiper-slide-button swiper-button-prev client-reviews-prev"
+          ></div>
+          <div
+            class="swiper-slide-button swiper-button-next client-reviews-next"
+          ></div>
         </div>
       </section>
 
       <footer class="footer" id="footer"></footer>
     </main>
-  </body>
 
-  <script src="./layout/js/main.js"></script>
+    <script src="./layout/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./layout/js/slider.js"></script>
+  </body>
 </html>
