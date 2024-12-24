@@ -1,3 +1,15 @@
+@media (min-width: 1350px) {
+    .previews-section.home {
+        & .inner {
+
+            &::before,
+            &::after {
+                background-size: contain;
+            }
+        }
+    }
+}
+
 @media (max-width: 1180px) {
     .introduce-section {
         & .text {
@@ -77,6 +89,20 @@
                 & .link {
                     font-size: 14px;
                     padding: 5px 15px;
+                }
+            }
+        }
+    }
+
+    .previews-section {
+        & .inner {
+            & .text {
+                & h2 {
+                    font-size: 30px;
+                }
+
+                & p {
+                    font-size: 24px;
                 }
             }
         }
@@ -349,6 +375,15 @@
         }
     }
 
+    .slider-section {
+        & .message-section {
+            padding: 20px;
+            margin: 20px;
+            font-size: 16px;
+            border-radius: 7px;
+        }
+    }
+
     .contact-us-page {
         & .contact-us-section {
             padding-inline: 20px;
@@ -571,13 +606,6 @@
                     }
                 }
             }
-        }
-
-        & .message-section {
-            padding: 20px;
-            margin: 20px;
-            font-size: 16px;
-            border-radius: 7px;
         }
 
         &.client-reviews-section {
