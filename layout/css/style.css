@@ -412,7 +412,7 @@
         justify-content: center;
         color: var(--light-color);
         position: absolute;
-        top: 150px;
+        top: 200px;
         left: 50%;
         transform: translateX(-50%);
 
