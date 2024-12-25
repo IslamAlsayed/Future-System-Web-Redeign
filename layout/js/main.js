@@ -64,6 +64,7 @@ if (componentHeader) {
             let searchIcon = document.getElementById("searchIcon");
             if (searchIcon) {
                 searchIcon.addEventListener("click", () => {
+                    searchIcon.classList.toggle("active");
                     searchIcon.nextElementSibling.classList.toggle("show");
                 });
             }
@@ -76,6 +77,7 @@ if (componentHeader) {
                 }
 
                 if (searchIcon && !searchIcon.contains(e.target)) {
+                    searchIcon.classList.remove("active");
                     searchIcon.nextElementSibling.classList.remove("show");
                 }
             })
@@ -88,6 +90,7 @@ if (componentHeader) {
                 }
 
                 if (searchIcon) {
+                    searchIcon.classList.remove("active");
                     searchIcon.nextElementSibling.classList.remove("show");
                 }
             })
@@ -113,21 +116,23 @@ if (toggleQuestions.length > 0) {
     })
 }
 
-let fasterServicesCards = document.getElementById("faster-services-cards");
-if (fasterServicesCards) {
+let fasterServicesParentCards = document.getElementById("faster-services-cards");
+if (fasterServicesParentCards) {
     fetch("./data/faster-services.json").then(response => response.json())
         .then(result => {
             result.forEach(card => {
                 let cardHTML = `
-                    <div class="card" data-index="${card.id}">
+                    <div class="card fadeUp" data-index="${card.id}">
                         <div class="image">
                         <img src="${card.image}" alt="${card.title}" />
                         </div>
                         <h2>${card.title}</h2>
                     </div>
                 `;
-                fasterServicesCards.innerHTML += cardHTML;
+                fasterServicesParentCards.innerHTML += cardHTML;
             })
+            animationFadeUp();
+
         }).catch(err => console.log(err));
 }
 
@@ -145,4 +150,18 @@ function lengthText(text) {
     }
 
     return text;
+}
+
+animationFadeUp();
+
+function animationFadeUp() {
+    let cards = Array.from(document.querySelectorAll(".fadeUp"));
+
+    cards.forEach(card => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY + 400 >= card.offsetTop) {
+                card.classList.add("show");
+            }
+        });
+    });
 }
