@@ -10,6 +10,8 @@
     }
 }
 
+@media (max-width: 1349px) {}
+
 @media (max-width: 1180px) {
     .introduce-section {
         & .text {
@@ -22,6 +24,12 @@
 }
 
 @media (max-width: 1080px) {
+    .contact-us-section {
+        &::after {
+            background-size: contain;
+        }
+    }
+
     .introduce-section {
         & .text {
             & h2 {
@@ -68,6 +76,14 @@
     }
 }
 
+@media (min-width: 993px) {
+    .about-us-section {}
+
+    .introduce-section {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 992px) {
     .header {
         & .inner {
@@ -94,15 +110,45 @@
         }
     }
 
-    .previews-section {
-        & .inner {
-            & .text {
-                & h2 {
-                    font-size: 30px;
-                }
+    .home-section {
+        /* height: 1400px; */
 
-                & p {
-                    font-size: 24px;
+        & .inner-text {
+            width: 580px;
+
+            & h2 {
+                font-size: 24px;
+            }
+
+            & p {
+                font-size: 16px;
+            }
+        }
+
+        & .home-preview {
+            & .card-wrapper {
+                max-width: 500px;
+                min-height: 450px;
+
+                & .swiper-slide {
+                    & .slide {
+                        padding: 15px;
+                        border-radius: 14px;
+                    }
+
+                    & .shadow {
+                        &::before {
+                            width: calc(100% - 50px);
+                            bottom: -10px;
+                            border-radius: 0 0 14px 14px;
+                        }
+
+                        &::after {
+                            width: calc(100% - 100px);
+                            bottom: -20px;
+                            border-radius: 0 0 14px 14px;
+                        }
+                    }
                 }
             }
         }
@@ -117,6 +163,33 @@
 
             & p {
                 font-size: 14px;
+            }
+        }
+    }
+
+    .common-questions-page {
+        & .questions-section {
+            & .questions {
+                & ul {
+                    & .head-question {
+                        & h2 {
+                            font-size: 14px;
+                        }
+
+                        & i {
+                            width: 35px;
+                            height: 35px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    & li {
+                        & ul {
+                            font-size: 12px;
+                            padding-inline-start: 50px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -147,6 +220,8 @@
         }
     }
 }
+
+@media (max-width: 800px) {}
 
 @media (max-width: 768px) {
     .header {
@@ -206,10 +281,69 @@
         }
     }
 
-    .previews-section {
-        & .inner {
-            & .text {
-                width: 80%;
+    .home-section {
+        & .inner-text {
+            gap: 20px;
+            width: 80%;
+            top: 120px;
+
+            & h2 {
+                font-size: 18px;
+            }
+
+            & p {
+                font-size: 14px;
+            }
+
+            & .action {
+                & .link {
+                    font-size: 16px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        & .home-preview {
+            & .card-wrapper {
+                max-width: 350px;
+                min-height: 300px;
+
+                & .swiper-slide {
+                    & .slide {
+                        padding: 10px 10px 0;
+                        border-radius: 7px;
+
+                        & .image {
+                            border-radius: 3px;
+                        }
+                    }
+
+                    & .shadow {
+                        &::before {
+                            width: calc(100% - 50px);
+                            bottom: -10px;
+                            border-radius: 0 0 7px 7px;
+                        }
+
+                        &::after {
+                            width: calc(100% - 100px);
+                            bottom: -20px;
+                            border-radius: 0 0 7px 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us-section {
+        & .inner-text {
+            & h2 {
+                font-size: 24px;
+            }
+
+            & p {
+                font-size: 20px;
             }
         }
     }
@@ -299,6 +433,28 @@
         }
     }
 
+    .faster-services-section {
+        & .cards {
+            gap: 20px;
+            padding-inline: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+            & .card {
+                padding: 20px;
+
+                & .image {
+                    width: calc(200px / 2);
+                    height: calc(200px / 2);
+                    padding: 20px;
+                }
+
+                & h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
     .footer {
         padding: 70px 20px;
 
@@ -322,56 +478,74 @@
 }
 
 @media (max-width: 600px) {
-    .preview {
-        & .card-wrapper {
-            & .swiper-slide {
-                & .slide {
-                    padding: 10px;
-                    border-radius: 14px;
-                }
+    .header {
+        & .inner {
+            & .userActions {
+                gap: 10px;
 
-                & .shadow {
-                    &::before {
-                        bottom: -15px;
-                        border-radius: 0 0 14px 14px;
-                    }
-
-                    &::after {
-                        bottom: -30px;
-                        border-radius: 0 0 14px 14px;
-                    }
+                & .link {
+                    font-size: 8px;
+                    padding: 5px 10px;
+                    border-radius: 3px;
                 }
             }
         }
     }
 
-    .previews-section {
-        & .inner {
-            & .text {
-                width: 100%;
+    .home-section {
+        & .inner-text {
+            gap: 20px;
+            width: 80%;
+            top: 100px;
 
-                & h2 {
-                    font-size: 24px;
-                }
+            & h2 {
+                font-size: 16px;
+            }
 
-                & p {
-                    font-size: 20px;
+            & p {
+                font-size: 12px;
+            }
+
+            & .action {
+                & .link {
+                    font-size: 12px;
                 }
             }
         }
 
-        &.about-us {
-            & .inner {
-                & .text {
-                    & h2 {
-                        font-size: 36px;
-                    }
+        & .home-preview {
+            transform: translateY(-10px);
+        }
+    }
 
-                    & p {
-                        font-size: 24px;
-                    }
+    .about-us-section {
+        & .inner-text {
+            gap: 15px;
+
+            & h2 {
+                font-size: 24px;
+            }
+
+            & p {
+                font-size: 20px;
+            }
+
+            & .action {
+                margin-top: 20px;
+
+                & .link {
+                    font-size: 16px;
+                    padding: 5px 10px;
                 }
             }
+        }
+    }
+
+    .head {
+        padding: 30px 20px 20px;
+
+        & h2 {
+            font-size: 24px;
         }
     }
 
@@ -381,62 +555,6 @@
             margin: 20px;
             font-size: 16px;
             border-radius: 7px;
-        }
-    }
-
-    .contact-us-page {
-        & .contact-us-section {
-            padding-inline: 20px;
-
-            & .inner {
-                width: 100%;
-
-                & .head {
-                    & h2 {
-                        font-size: 20px;
-                    }
-
-                    & p {
-                        font-size: 16px;
-                    }
-                }
-
-                & form {
-                    & .group:not(:has(select)) {
-                        flex-direction: column;
-
-                        & input,
-                        & select,
-                        & textarea {
-                            padding: 0px;
-                        }
-
-                        & textarea {
-                            height: 100px;
-                        }
-                    }
-
-                    & .group:has(select) {
-                        & input {
-                            padding: 0;
-                        }
-
-                        & img {
-                            width: 30px;
-                        }
-                    }
-
-                    & .group:has(select) {
-                        padding-inline: 10px;
-                    }
-
-                    & .action {
-                        & .link {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -455,11 +573,39 @@
         }
 
         & .questions-section {
+            gap: 20px;
             padding: 20px;
 
             & .head {
                 & h2 {
                     font-size: 16px;
+                }
+            }
+
+            & .questions {
+                & ul {
+                    gap: 20px;
+
+                    & .head-question {
+                        margin-bottom: 10px;
+
+                        & h2 {
+                            font-size: 12px;
+                        }
+
+                        & i {
+                            width: 25px;
+                            height: 25px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    & li {
+                        & ul {
+                            font-size: 10px;
+                            padding-inline-start: 45px;
+                        }
+                    }
                 }
             }
         }
@@ -493,10 +639,17 @@
 @media (max-width: 500px) {
     .header {
         & .inner {
+            height: 50px;
+
             & .links {
                 width: 100%;
                 align-items: start;
                 padding: 0 15px 15px;
+                padding-top: 150px;
+
+                &.active {
+                    transform: translate(-50%, -150px);
+                }
 
                 & li,
                 & a,
@@ -536,16 +689,49 @@
                     }
                 }
             }
+
+            & .logo,
+            & .userActions {
+                z-index: 999;
+            }
         }
     }
 
-    .previews-section.home {
-        & .inner {
-            height: 145svh;
+    .home-section {
+        & .inner-text {
+            & h2 {
+                font-size: 10px;
+            }
 
-            .preview {
-                & .card-wrapper {
-                    min-height: 35svh;
+            & p {
+                font-size: 8px;
+            }
+
+            & .action {
+                & .link {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .about-us-section {
+        & .inner-text {
+            gap: 10px;
+
+            & h2 {
+                font-size: 16px;
+            }
+
+            & p {
+                font-size: 14px;
+            }
+
+            & .action {
+                margin-top: 10px;
+
+                & .link {
+                    font-size: 14px;
                 }
             }
         }
@@ -566,6 +752,18 @@
         }
     }
 
+    .head {
+        /* padding: 20px 20px 0px; */
+
+        & h2 {
+            font-size: 18px;
+        }
+
+        & a {
+            font-size: 16px;
+        }
+    }
+
     .introduce-section {
         padding-inline: 20px;
 
@@ -577,14 +775,6 @@
             & p {
                 font-size: 16px;
             }
-        }
-    }
-
-    .head {
-        padding: 30px 20px 20px;
-
-        & h2 {
-            font-size: 24px;
         }
     }
 
@@ -637,6 +827,38 @@
     .swiper-button-next:after,
     .swiper-rtl .swiper-button-prev:after {
         font-size: 30px;
+    }
+
+    .common-questions-page {
+        & .questions-section {
+            & .questions {
+                & ul {
+                    gap: 10px;
+
+                    & .head-question {
+                        gap: 10px;
+                        margin-bottom: 5px;
+
+                        & h2 {
+                            font-size: 8px;
+                        }
+
+                        & i {
+                            width: 15px;
+                            height: 15px;
+                            font-size: 8px;
+                        }
+                    }
+
+                    & li {
+                        & ul {
+                            font-size: 6px;
+                            padding-inline-start: 25px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .footer {

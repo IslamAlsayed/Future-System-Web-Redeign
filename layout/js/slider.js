@@ -1,4 +1,4 @@
-function createSwiper(selector, paginationClass, nextClass, prevClass, breakpoints) {
+function createSwiper(selector, paginationClass, nextClass, prevClass, startingClass, breakpoints) {
     return new Swiper(selector, {
         loop: true,
         spaceBetween: 30,
@@ -11,31 +11,32 @@ function createSwiper(selector, paginationClass, nextClass, prevClass, breakpoin
             nextEl: nextClass,
             prevEl: prevClass
         },
-        breakpoints: breakpoints
+        breakpoints: breakpoints,
+        initialSlide: startingClass
     });
 }
 
-createSwiper('.preview-card-wrapper', '.swiper-pagination', '.swiper-button-next', '.swiper-button-prev', {
+createSwiper('.main-card-wrapper', '.swiper-pagination', '.swiper-button-next', '.swiper-button-prev', 1, {
     0: { slidesPerView: 1 },
-    768: { slidesPerView: 1.5 },
-    1024: { slidesPerView: 2 }
+    768: { slidesPerView: 1 },
+    1024: { slidesPerView: 1 }
 });
 
-createSwiper('.services-card-wrapper', '.services-pagination', '.services-next', '.services-prev', {
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    992: { slidesPerView: 3 },
-    1024: { slidesPerView: 3 }
-});
-
-createSwiper('.features-card-wrapper', '.features-pagination', '.features-next', '.features-prev', {
+createSwiper('.services-card-wrapper', '.services-pagination', '.services-next', '.services-prev', 0, {
     0: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
     992: { slidesPerView: 3 },
     1024: { slidesPerView: 3 }
 });
 
-createSwiper('.projects-card-wrapper', '.projects-pagination', '.projects-next', '.projects-prev', {
+createSwiper('.features-card-wrapper', '.features-pagination', '.features-next', '.features-prev', 0, {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    992: { slidesPerView: 3 },
+    1024: { slidesPerView: 3 }
+});
+
+createSwiper('.projects-card-wrapper', '.projects-pagination', '.projects-next', '.projects-prev', 0, {
     0: { slidesPerView: 1 },
     500: { slidesPerView: 2 },
     768: { slidesPerView: 3 },
@@ -43,7 +44,7 @@ createSwiper('.projects-card-wrapper', '.projects-pagination', '.projects-next',
     1024: { slidesPerView: 4 }
 });
 
-createSwiper('.clients-card-wrapper', '.clients-pagination', '.clients-next', '.clients-prev', {
+createSwiper('.clients-card-wrapper', '.clients-pagination', '.clients-next', '.clients-prev', 0, {
     0: { slidesPerView: 1 },
     500: { slidesPerView: 2 },
     768: { slidesPerView: 3 },
@@ -51,7 +52,7 @@ createSwiper('.clients-card-wrapper', '.clients-pagination', '.clients-next', '.
     1024: { slidesPerView: 4 }
 });
 
-createSwiper('.client-reviews-card-wrapper', '.client-reviews-pagination', '.client-reviews-next', '.client-reviews-prev', {
+createSwiper('.client-reviews-card-wrapper', '.client-reviews-pagination', '.client-reviews-next', '.client-reviews-prev', 0, {
     0: { slidesPerView: 1 },
     500: { slidesPerView: 2 },
     768: { slidesPerView: 3 },

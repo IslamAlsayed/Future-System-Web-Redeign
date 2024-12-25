@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "image": "./layout/images/faster-services/faster-service1.png",
+        "title": "إصلاح المعدات"
+    },
+    {
+        "id": 2,
+        "image": "./layout/images/faster-services/faster-service2.png",
+        "title": "إصلاح المعدات"
+    },
+    {
+        "id": 3,
+        "image": "./layout/images/faster-services/faster-service3.png",
+        "title": "إصلاح المعدات"
+    },
+    {
+        "id": 4,
+        "image": "./layout/images/faster-services/faster-service4.png",
+        "title": "الاصناف"
+    },
+    {
+        "id": 5,
+        "image": "./layout/images/faster-services/faster-service5.png",
+        "title": "إدارة الاقتراحات والطلبات"
+    },
+    {
+        "id": 6,
+        "image": "./layout/images/faster-services/faster-service6.png",
+        "title": "الفواتير الدورية"
+    },
+    {
+        "id": 7,
+        "image": "./layout/images/faster-services/faster-service7.png",
+        "title": "المشتريات"
+    },
+    {
+        "id": 8,
+        "image": "./layout/images/faster-services/faster-service8.png",
+        "title": "عروض الاسعار"
+    },
+    {
+        "id": 9,
+        "image": "./layout/images/faster-services/faster-service9.png",
+        "title": "فواتير المبيعات"
+    },
+    {
+        "id": 10,
+        "image": "./layout/images/faster-services/faster-service10.png",
+        "title": "إصلاح المعدات"
+    },
+    {
+        "id": 11,
+        "image": "./layout/images/faster-services/faster-service11.png",
+        "title": "القيود"
+    },
+    {
+        "id": 12,
+        "image": "./layout/images/faster-services/faster-service12.png",
+        "title": "إدارة الاصول"
+    },
+    {
+        "id": 13,
+        "image": "./layout/images/faster-services/faster-service13.png",
+        "title": "إدارة الموارد البشرية"
+    },
+    {
+        "id": 14,
+        "image": "./layout/images/faster-services/faster-service14.png",
+        "title": "التوظيف"
+    },
+    {
+        "id": 15,
+        "image": "./layout/images/faster-services/faster-service15.png",
+        "title": "البحث عن وظيفة"
+    },
+    {
+        "id": 16,
+        "image": "./layout/images/faster-services/faster-service16.png",
+        "title": "الحضور بالبصمة"
+    },
+    {
+        "id": 17,
+        "image": "./layout/images/faster-services/faster-service17.png",
+        "title": "نقاط البيع"
+    },
+    {
+        "id": 18,
+        "image": "./layout/images/faster-services/faster-service18.png",
+        "title": "ادارة علاقات الاعملاء"
+    },
+    {
+        "id": 19,
+        "image": "./layout/images/faster-services/faster-service19.png",
+        "title": "المبيعات"
+    },
+    {
+        "id": 20,
+        "image": "./layout/images/faster-services/faster-service20.png",
+        "title": "الحمولات"
+    },
+    {
+        "id": 21,
+        "image": "./layout/images/faster-services/faster-service21.png",
+        "title": "العمولة"
+    },
+    {
+        "id": 22,
+        "image": "./layout/images/faster-services/faster-service22.png",
+        "title": "وكيل المبيعات"
+    },
+    {
+        "id": 23,
+        "image": "./layout/images/faster-services/faster-service23.png",
+        "title": "ادارة العقود"
+    },
+    {
+        "id": 24,
+        "image": "./layout/images/faster-services/faster-service24.png",
+        "title": "دارو المستودعات"
+    },
+    {
+        "id": 25,
+        "image": "./layout/images/faster-services/faster-service25.png",
+        "title": "بطاقات العمل"
+    },
+    {
+        "id": 26,
+        "image": "./layout/images/faster-services/faster-service26.png",
+        "title": "ادارة المرافق"
+    },
+    {
+        "id": 27,
+        "image": "./layout/images/faster-services/faster-service27.png",
+        "title": "ادارة الغرف والشقق المفروشة والفنادق"
+    },
+    {
+        "id": 28,
+        "image": "./layout/images/faster-services/faster-service28.png",
+        "title": "نظام ادارة اوامر العمل"
+    },
+    {
+        "id": 29,
+        "image": "./layout/images/faster-services/faster-service29.png",
+        "title": "ادارة الشحن والشحنات"
+    },
+    {
+        "id": 30,
+        "image": "./layout/images/faster-services/faster-service30.png",
+        "title": "ادارة الممتلكات"
+    },
+    {
+        "id": 31,
+        "image": "./layout/images/faster-services/faster-service31.png",
+        "title": "ادارة التنظيف"
+    },
+    {
+        "id": 32,
+        "image": "./layout/images/faster-services/faster-service32.png",
+        "title": "تأجير العقارات والممتلكات"
+    },
+    {
+        "id": 33,
+        "image": "./layout/images/faster-services/faster-service33.png",
+        "title": "سجلات العمل"
+    },
+    {
+        "id": 34,
+        "image": "./layout/images/faster-services/faster-service34.png",
+        "title": "ادارة المشاريع"
+    },
+    {
+        "id": 35,
+        "image": "./layout/images/faster-services/faster-service35.png",
+        "title": "ادارة الملفات"
+    },
+    {
+        "id": 36,
+        "image": "./layout/images/faster-services/faster-service36.png",
+        "title": "ملفات جداول البيانات"
+    },
+    {
+        "id": 37,
+        "image": "./layout/images/faster-services/faster-service37.png",
+        "title": "مشاركة الملف"
+    },
+    {
+        "id": 38,
+        "image": "./layout/images/faster-services/faster-service38.png",
+        "title": "سجل النشاطات"
+    },
+    {
+        "id": 39,
+        "image": "./layout/images/faster-services/faster-service39.png",
+        "title": "مهام فريق العمل"
+    },
+    {
+        "id": 40,
+        "image": "./layout/images/faster-services/faster-service40.png",
+        "title": "ادارة الوقت"
+    },
+    {
+        "id": 41,
+        "image": "./layout/images/faster-services/faster-service41.png",
+        "title": "المحادثات"
+    },
+    {
+        "id": 42,
+        "image": "./layout/images/faster-services/faster-service42.png",
+        "title": "ادارة الاسطول"
+    },
+    {
+        "id": 43,
+        "image": "./layout/images/faster-services/faster-service43.png",
+        "title": "حجز المركبات"
+    },
+    {
+        "id": 44,
+        "image": "./layout/images/faster-services/faster-service44.png",
+        "title": "ادارة ورش العمل"
+    },
+    {
+        "id": 45,
+        "image": "./layout/images/faster-services/faster-service45.png",
+        "title": "فحص واصلاح المركبات والمعدت"
+    }
+]
