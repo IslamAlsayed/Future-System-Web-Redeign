@@ -61,21 +61,37 @@ if (componentHeader) {
                 routes.classList.toggle("active");
             })
 
+            let searchIcon = document.getElementById("searchIcon");
+            if (searchIcon) {
+                searchIcon.addEventListener("click", () => {
+                    searchIcon.nextElementSibling.classList.toggle("show");
+                });
+            }
+
             document.addEventListener("click", (e) => {
-                if (!menu.contains(e.target) && !componentHeader.contains(e.target)) {
+                if (menu && !menu.contains(e.target) && componentHeader && !componentHeader.contains(e.target)) {
                     routes.classList.remove("active");
                     let nestedList = document.querySelectorAll(".nestedList");
                     nestedList.forEach(list => list.classList.remove("show"));
                 }
+
+                if (searchIcon && !searchIcon.contains(e.target)) {
+                    searchIcon.nextElementSibling.classList.remove("show");
+                }
             })
 
             window.addEventListener("scroll", () => {
-                routes.classList.remove("active");
-                let nestedList = document.querySelectorAll(".nestedList");
-                nestedList.forEach(list => list.classList.remove("show"));
+                if (routes) {
+                    routes.classList.remove("active");
+                    let nestedList = document.querySelectorAll(".nestedList");
+                    nestedList.forEach(list => list.classList.remove("show"));
+                }
+
+                if (searchIcon) {
+                    searchIcon.nextElementSibling.classList.remove("show");
+                }
             })
-        })
-        .catch(err => console.log(err));
+        }).catch(err => console.log(err));
 }
 
 let componentFooter = document.getElementById("footer");
@@ -85,7 +101,6 @@ if (componentFooter) {
             componentFooter.innerHTML = result;
         }).catch(err => console.log(err));
 }
-
 
 let toggleQuestions = document.querySelectorAll(".toggle-questions");
 if (toggleQuestions.length > 0) {
@@ -116,18 +131,18 @@ if (fasterServicesCards) {
         }).catch(err => console.log(err));
 }
 
-function lengthText(text) {
-    if (text.length > 100) {
-        return text.substring(0, 100) + "...";
-    }
-
-    return text;
-}
-
 let elementLengths = document.querySelectorAll(".elementLength");
 if (elementLengths.length > 0) {
     elementLengths.forEach(element => {
         let length = element.dataset.length;
         element.textContent = lengthText(length);
     })
+}
+
+function lengthText(text) {
+    if (text.length > 100) {
+        return text.substring(0, 100) + "...";
+    }
+
+    return text;
 }

@@ -10,8 +10,6 @@
     }
 }
 
-@media (max-width: 1349px) {}
-
 @media (max-width: 1180px) {
     .introduce-section {
         & .text {
@@ -77,8 +75,6 @@
 }
 
 @media (min-width: 993px) {
-    .about-us-section {}
-
     .introduce-section {
         margin-top: 50px;
     }
@@ -111,8 +107,6 @@
     }
 
     .home-section {
-        /* height: 1400px; */
-
         & .inner-text {
             width: 580px;
 
@@ -220,8 +214,6 @@
         }
     }
 }
-
-@media (max-width: 800px) {}
 
 @media (max-width: 768px) {
     .header {
@@ -482,6 +474,14 @@
         & .inner {
             & .userActions {
                 gap: 10px;
+
+                & .search {
+                    & i {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 12px;
+                    }
+                }
 
                 & .link {
                     font-size: 8px;
@@ -753,8 +753,6 @@
     }
 
     .head {
-        /* padding: 20px 20px 0px; */
-
         & h2 {
             font-size: 18px;
         }
