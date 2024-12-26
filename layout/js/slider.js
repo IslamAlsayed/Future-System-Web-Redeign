@@ -2,10 +2,10 @@ function createSwiper(selector, paginationClass, nextClass, prevClass, startingC
     return new Swiper(selector, {
         loop: false, // The scroll bar is infinitely scrollable by default.
         spaceBetween: 30,
-        speed: 5000,
-        autoplay: {
-            delay: 1,
-        },
+        // speed: 5000,
+        // autoplay: {
+        //     delay: 1,
+        // },
         pagination: {
             el: paginationClass,
             clickable: true,

@@ -217,6 +217,10 @@
     color: var(--light-color);
     background-color: var(--main-color);
 
+    & * {
+        font-weight: 700 !important;
+    }
+
     & .row {
         gap: 36px;
         width: 100%;
@@ -377,7 +381,6 @@
             gap: 8px;
             display: flex;
             font-size: 22px;
-            font-weight: 400;
             align-items: center;
             justify-content: center;
 
@@ -707,7 +710,7 @@
 
         & p {
             font-size: 28px;
-            font-weight: 400;
+            font-weight: 700;
         }
     }
 }
@@ -738,7 +741,7 @@
             padding: 20px;
             font-size: 24px;
             line-height: 2;
-            font-weight: 400;
+            font-weight: 700;
             border-radius: 25px;
             border: 1px solid var(--main-color);
         }
@@ -755,8 +758,8 @@
     & .message-section {
         padding: 36px;
         font-size: 24px;
-        font-weight: 400;
         line-height: 2;
+        font-weight: 700;
         margin-inline: 50px;
         border-radius: 25px;
         margin-bottom: 70px;
