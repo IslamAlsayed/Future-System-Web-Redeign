@@ -62,9 +62,9 @@ if (componentHeader) {
             })
 
             let searchIcon = document.getElementById("searchIcon");
+            let searchParent = document.getElementById("searchParent");
             if (searchIcon) {
                 searchIcon.addEventListener("click", () => {
-                    searchIcon.classList.toggle("active");
                     searchIcon.nextElementSibling.classList.toggle("show");
                 });
             }
@@ -76,8 +76,7 @@ if (componentHeader) {
                     nestedList.forEach(list => list.classList.remove("show"));
                 }
 
-                if (searchIcon && !searchIcon.contains(e.target)) {
-                    searchIcon.classList.remove("active");
+                if (searchParent && !searchParent.contains(e.target)) {
                     searchIcon.nextElementSibling.classList.remove("show");
                 }
             })
@@ -90,7 +89,6 @@ if (componentHeader) {
                 }
 
                 if (searchIcon) {
-                    searchIcon.classList.remove("active");
                     searchIcon.nextElementSibling.classList.remove("show");
                 }
             })

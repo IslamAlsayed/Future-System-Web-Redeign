@@ -11,6 +11,21 @@
 }
 
 @media (max-width: 1180px) {
+    .header {
+        & .inner {
+            & .logo {
+                min-width: 90px;
+            }
+
+            & .userActions {
+                & .link {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
     .introduce-section {
         & .text {
             & p {
@@ -22,6 +37,29 @@
 }
 
 @media (max-width: 1080px) {
+    .header {
+        & .inner {
+            & .logo {
+                width: 90px;
+            }
+
+            & .userActions {
+                & .search {
+                    & .searchBar {
+                        &.show {
+                            width: 150px;
+                        }
+                    }
+                }
+
+                & .link {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
     .contact-us-section {
         &::after {
             background-size: contain;
@@ -89,24 +127,56 @@
 @media (max-width: 992px) {
     .header {
         & .inner {
-            gap: 25px;
-
-            & .logo {
-                width: 70px;
-            }
+            height: 70px;
+            position: relative;
+            justify-content: space-between;
 
             & .links {
+                width: 50%;
+                position: absolute;
+                top: 70px;
+                left: 50%;
+                opacity: 0;
+                transition: 0.2s;
+                visibility: hidden;
+                flex-direction: column;
+                transform: translate(-50%, 20px);
+                background-color: var(--main-color);
 
                 & a,
                 & span {
-                    font-size: 12px;
+                    width: 90px;
+                    display: block;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate(-50%, 0);
+                }
+
+                & .parentLink,
+                & .nestedParentLink {
+                    & .nestedList {
+                        & .nestedList {
+                            right: -120px;
+                        }
+
+                        &.show {
+                            right: -120px;
+                        }
+                    }
                 }
             }
 
             & .userActions {
-                & .link {
-                    font-size: 14px;
-                    padding: 5px 15px;
+                & .menu {
+                    cursor: pointer;
+                    display: block;
+                    font-size: 24px;
+                    color: var(--light-color);
                 }
             }
         }
@@ -224,57 +294,8 @@
 @media (max-width: 768px) {
     .header {
         & .inner {
-            height: 70px;
-            position: relative;
-            justify-content: space-between;
-
             & .links {
-                width: 50%;
-                position: absolute;
-                top: 70px;
-                left: 50%;
-                opacity: 0;
-                transition: 0.2s;
-                visibility: hidden;
-                flex-direction: column;
-                transform: translate(-50%, 20px);
-                background-color: var(--main-color);
-
-                & a,
-                & span {
-                    width: 90px;
-                    display: block;
-                    text-align: center;
-                    justify-content: center;
-                }
-
-                &.active {
-                    opacity: 1;
-                    visibility: visible;
-                    transform: translate(-50%, 0);
-                }
-
-                & .parentLink,
-                & .nestedParentLink {
-                    & .nestedList {
-                        & .nestedList {
-                            right: -120px;
-                        }
-
-                        &.show {
-                            right: -120px;
-                        }
-                    }
-                }
-            }
-
-            & .userActions {
-                & .menu {
-                    cursor: pointer;
-                    display: block;
-                    font-size: 24px;
-                    color: var(--light-color);
-                }
+                width: 70%;
             }
         }
     }
@@ -486,6 +507,14 @@
                         width: 30px;
                         height: 30px;
                         font-size: 12px;
+                    }
+
+                    & .searchBar {
+                        height: 30px;
+
+                        &.show {
+                            margin-inline-end: 10px;
+                        }
                     }
                 }
 
