@@ -7,11 +7,7 @@
 - Html
 - Css
 - Javascript
-
-## Configuration
-
-Ensure you have the following configurations in your .env file:
-
+- 
 ## Contributing
 
 If you wish to contribute to this project, please fork the repository and create a pull request. Ensure your code follows the project's coding standards and includes appropriate tests.
